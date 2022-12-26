@@ -12,11 +12,15 @@ def create_syntax_tree(expression):
     print(tree)
     print(ast.dump(tree, indent=4))
 
+
 print("1st Module answer\n")
-tokens = tokenize("a + (b * c)")
+
+exp = input("Enter expression: ")
+
+tokens = tokenize(exp)
 print(tokens)
 
 print("2nd Module answer\n")
 
 # Create and print the syntax tree
-create_syntax_tree("a + (b * c)")
+create_syntax_tree(exp)
